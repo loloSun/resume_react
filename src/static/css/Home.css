@@ -1,0 +1,134 @@
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 144, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.container{
+    margin:auto;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 100;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.logo_img>img{
+    width: 200px;
+    height: 200px;
+    animation: logoImg 1s;
+    border-radius: 50%;
+}
+@keyframes logoImg{
+    from{
+        width: 130px;
+        height: 130px;
+    }
+    to{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.container>h1{
+    text-align: center;
+    transform: rotate(-5deg);
+    font-size: 40px;
+    animation: name 1s;
+    color:#fff;
+}
+@keyframes name{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+.container>h1>span{
+    position: relative;
+}
+.container>h1>span:before{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 30px;
+    height: 4px;
+    content: '';
+    background: #fff;
+    margin-left: -40px;
+}
+.container>h1>span:after{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 30px;
+    height: 4px;
+    content: '';
+    background: #fff;
+    margin-right: -40px;
+}
+
+.container h3{
+    text-align: center;
+    font-size: 16px;
+    animation: job 1s;
+    color:#fff;
+    font-weight: 400;
+}
+@keyframes job{
+    from{
+        font-size: 12px;
+    }
+    to{
+        font-size: 16px;
+    }
+}
+
+
+
+.list{
+    position: absolute;
+    z-index: 100;
+    top: 100px;
+    /* animation: list 1s; */
+}
+/* @keyframes list{
+    from{left: -100px;}
+    to{left: 0;}
+} */
+.list{
+    margin-left:-120px;
+}
+.list a{
+    display: block;
+    padding:0 10px;
+    margin:5px 0;
+    width: 100px;
+    height: 30px;
+    background: #fff;
+    text-align: right;
+    border-radius: 0 10% 10% 0;
+}
+.set{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* left: -100px; */
+    top: -30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 20%;
+}
+.set>img{
+    width: 30px;
+    height: 30px;
+}
