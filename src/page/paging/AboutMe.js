@@ -1,5 +1,7 @@
 import React,{Component} from 'react'
 
+import Nav from '../../component/Nav'
+
 class AboutMe extends Component{
     constructor(props){
         super()
@@ -7,7 +9,10 @@ class AboutMe extends Component{
 
     render(){
         return(
-            <div className='page'>AboutMe</div>
+            <div className='page'>
+                <Nav />
+                AboutMe
+            </div>
         )
     }
 }
