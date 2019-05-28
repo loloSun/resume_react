@@ -10,21 +10,28 @@ class Home extends Component{
     // 挂载
     componentDidMount(){
         $(".list li").each(function(index){
-            // $(this).animate({
-            //     marginLeft:'0px'
-            // },500)
-            console.log(index)
-            let time = index*100
-            console.log(time)
-            $('.list').eq(index).animate({
+            $(this).animate({
                 marginLeft:'0px'
-            },500+(index*100))
-            // console.log($(this))
-
+            },500+(index*200))
         })
-        // $('.logo_img img').animate({
-        //     width:"300px"
-        // },500)
+    }
+
+    // list显示隐藏
+    setClick(){
+        // $('.list li').animate({width:'toggle'},500);
+        if($('.list li').css('margin-left') == '0px'){
+            $(".list li").each(function(index){
+                $(this).animate({
+                    marginLeft:'-120px'
+                },500+(index*200))
+            })
+        } else {
+            $(".list li").each(function(index){
+                $(this).animate({
+                    marginLeft:'0'
+                },500+(index*200))
+            })
+        }
     }
 
     render() {
@@ -48,9 +55,9 @@ class Home extends Component{
                     </h3>
                 </div>
                 <ul className="list">
-                    {/* <div class="set">
-                        <img src="../img/set.png" alt="">
-                    </div> */}
+                    <div className="set" onClick={this.setClick.bind(this)}>
+                        <img src={require('../static/img/set.png')} alt="" />
+                    </div>
                     <li>
                         <a href="aboutMe.html">
                             <span>About Me</span>

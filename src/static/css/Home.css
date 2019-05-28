@@ -105,7 +105,7 @@
     from{left: -100px;}
     to{left: 0;}
 } */
-.list{
+.list li{
     margin-left:-120px;
 }
 .list a{
@@ -122,7 +122,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    /* left: -100px; */
+    left: 0;
     top: -30px;
     height: 30px;
     background: #fff;
