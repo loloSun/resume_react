@@ -8,7 +8,7 @@ code {
   box-sizing: border-box; 
 }
 html{
-  font-size : 62.5%;
+  font-size : 10px;
 }
 html,body,#root{
   width: 100%;

@@ -1,12 +1,15 @@
 import React,{Component} from 'react'
 import '../static/css/Home.css'
 import $ from 'jquery'
+import {Link} from 'react-router-dom'
+
+// import Router from '../Router'
+
+import AboutMe from './paging/AboutMe'
 
 class Home extends Component{
     constructor(props){   // 构造方法 对对象的初始化 只要存在constructor就要调用super()，但是，不是每个react组件都需要constructor，当没有调用super()时，this还没有被初始化，所以不能使用
-        super(props)   // 继承  当需要在constructor中访问this.props的情况下，必须要调用super(props)
-        this.state = {
-        }
+        super()   // 继承  当需要在constructor中访问this.props的情况下，必须要调用super(props)
     }
 
     // 挂载
@@ -16,7 +19,7 @@ class Home extends Component{
                 marginLeft:'0px'
             },500+(index*200))
         })
-        
+
         // 实时获取屏幕宽度
         $(window).resize(function(){
             if($(window).width() > 768){
@@ -75,24 +78,16 @@ class Home extends Component{
                         <img src={require('../static/img/set.png')} alt="" />
                     </div>
                     <li>
-                        <a href="aboutMe.html">
-                            <span>About Me</span>
-                        </a>
+                        <Link to={{pathname:'/AboutMe'}} className="aboutme">About Me</Link>
                     </li>
                     <li>
-                        <a href="javascript: void(0);">
-                            <span>技能</span>
-                        </a>
+                        <Link to={{pathname:'/Skill'}} className="skill">技 术</Link>
                     </li>
                     <li>
-                        <a href="../html/project.html">
-                            <span>项目经验</span>
-                        </a>
+                        <Link to={{pathname:'/Project'}} className="project">项目经验</Link>
                     </li>
                     <li>
-                        <a href="../html/article.html">
-                            <span>文章动态</span>
-                        </a>
+                        <Link to={{pathname:'/Article'}} className="article">文章 笔记</Link>
                     </li>
                 </ul>
             </div>

@@ -1,5 +1,5 @@
 html{
-    font-size : 10px;
+    /* font-size : 10px; */
 }
 .cover{
     width: 100%;
@@ -43,16 +43,16 @@ html{
 .container>h1{
     text-align: center;
     transform: rotate(-5deg);
-    font-size: 4rem;
+    font-size: 2.5rem;
     animation: name 1s;
     color:#fff;
 }
 @keyframes name{
     from{
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
     to{
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 }
 .container>h1>span{
@@ -81,17 +81,17 @@ html{
 
 .container h3{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1rem;
     animation: job 1s;
     color:#fff;
     font-weight: 400;
 }
 @keyframes job{
     from{
-        font-size: 1.2rem;
+        font-size: .75rem;
     }
     to{
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 }
 
