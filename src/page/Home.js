@@ -5,6 +5,8 @@ import $ from 'jquery'
 class Home extends Component{
     constructor(props){   // 构造方法 对对象的初始化 只要存在constructor就要调用super()，但是，不是每个react组件都需要constructor，当没有调用super()时，this还没有被初始化，所以不能使用
         super(props)   // 继承  当需要在constructor中访问this.props的情况下，必须要调用super(props)
+        this.state = {
+        }
     }
 
     // 挂载
@@ -14,24 +16,38 @@ class Home extends Component{
                 marginLeft:'0px'
             },500+(index*200))
         })
+        
+        // 实时获取屏幕宽度
+        $(window).resize(function(){
+            if($(window).width() > 768){
+                $(".list li").css({display:"block"})
+            } else {
+                $(".list li").css({display:"none"})
+            }
+        })
     }
 
     // list显示隐藏
     setClick(){
-        // $('.list li').animate({width:'toggle'},500);
-        if($('.list li').css('margin-left') == '0px'){
-            $(".list li").each(function(index){
-                $(this).animate({
-                    marginLeft:'-120px'
-                },500+(index*200))
-            })
-        } else {
-            $(".list li").each(function(index){
-                $(this).animate({
-                    marginLeft:'0'
-                },500+(index*200))
-            })
+        if($(window).width() < 768){
+            $('.list li').slideToggle()
+        } else{
+            if($('.list li').css('margin-left') == '0px'){
+                $(".list li").each(function(index){
+                    $(this).animate({
+                        marginLeft:'-120px'
+                    },500+(index*200))
+                })
+            } else {
+                $(".list li").each(function(index){
+                    $(this).animate({
+                        marginLeft:'0'
+                    },500+(index*200))
+                })
+            }
         }
+    // })
+        
     }
 
     render() {
