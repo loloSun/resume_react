@@ -1,0 +1,150 @@
+ul,li,ol{
+    list-style: none;
+}
+.page{
+    box-sizing: border-box;
+    position: relative;
+}
+.container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:#fff;
+    animation: font 1s;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%)
+}
+@keyframes font{
+    from{top:4.5rem;}
+    to{top:3rem;}
+}
+.title{
+    line-height: 1.5;
+    font-size: 2.5rem;
+}
+.cont{
+    width: 100%;
+}
+.cont1{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+.cont2{
+    padding: 0 15px;
+}
+@media screen and (min-width:992px){
+    .page{
+        overflow: hidden;
+    }
+    .container{
+        height: 90%;
+    }
+    .title{
+        height: 18%;
+    }
+    .cont{
+        height: 82%;
+    }
+    .cont1{
+        width: 35%;
+        float: left;
+    }
+    .cont2{
+        width: 60%;
+        float: right;
+        text-align: left;
+    }
+}
+@media screen and (max-width:992px){
+    .page{
+        overflow: scroll;
+    }
+    .title{
+        height: 6.25rem;
+    }
+    .cont1{
+        width: 100%;
+    }
+    .cont2{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width:768px){
+    .title{
+        line-height: 2;
+        height: 5rem;
+    }
+}
+@media screen and (min-width:480px){
+    .first-block{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        width: 40%;
+    }
+    .second-block{
+        display: inline-block;
+        width: 60%;
+    }
+}
+@media screen and (max-width:480px){
+    .page{
+        font-size: .875rem;
+    }
+    .title{
+        font-size: 1.6rem;
+        height: 3.75rem;
+    }
+    .container{
+        width: 100%;
+    }
+    .cont1>li{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.cont1>li{
+    padding:10px 0;
+}
+.cont2 h2{
+    margin-bottom:20px;
+}
+.cont2 p{
+    margin-bottom: 30px;
+}
+.cont1>ol{
+    height: 1.875rem;
+    /* background: pink; */
+}
+.cont1>ol>li{
+    float: left;
+    height: 100%;
+    margin:0 1.25rem;
+    position: relative;
+}
+.cont1>ol i{
+    display: block;
+    width: 1.875rem;
+    height: 100%;
+    background-size:100%;
+}
+.cont1>ol img{
+    position: absolute;
+    width: 12.5rem;
+    bottom:1.875rem;
+    z-index: 999;
+    display: none;
+}
+.cont1>ol li:hover img{
+    display: block;
+}
+
