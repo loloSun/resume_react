@@ -26,3 +26,13 @@ npm install react-router-dom
 ```
 HashRouter 会有一个#，通过这个# HTML 5 History进行前端跳转他的感觉像锚点
 BrowserHistory 很简洁没有#，但是需要 server 端支持
+
+## 剪切 clip
+```
+clip:rect(0,80px,160px,0);
+```
+参数：
+- 上面减去多少
+- 左边显示多少
+- 上面显示多少
+- 左边减去多少

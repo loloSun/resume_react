@@ -1,11 +1,12 @@
 ul,li,ol{
     list-style: none;
 }
-.page{
+.aboutme{
     box-sizing: border-box;
     position: relative;
+    /* background: rgba(255, 144, 0, 0.9); */
 }
-.container{
+.content{
     width: 90%;
     height: auto;
     display: flex;
@@ -39,10 +40,10 @@ ul,li,ol{
     padding: 0 15px;
 }
 @media screen and (min-width:992px){
-    .page{
+    .aboutme{
         overflow: hidden;
     }
-    .container{
+    .content{
         height: 90%;
     }
     .title{
@@ -62,7 +63,7 @@ ul,li,ol{
     }
 }
 @media screen and (max-width:992px){
-    .page{
+    .aboutme{
         overflow: scroll;
     }
     .title{
@@ -96,14 +97,14 @@ ul,li,ol{
     }
 }
 @media screen and (max-width:480px){
-    .page{
+    .aboutme{
         font-size: .875rem;
     }
     .title{
         font-size: 1.6rem;
         height: 3.75rem;
     }
-    .container{
+    .content{
         width: 100%;
     }
     .cont1>li{

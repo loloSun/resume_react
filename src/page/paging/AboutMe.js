@@ -17,9 +17,9 @@ class AboutMe extends Component{
             backgroundImage:'url(' + require("../../static/img/icon/wx.png") + ')'
         }
         return(
-            <div className='page'>
+            <div className='page aboutme'>
                 <Nav />
-                <div className="container">
+                <div className="content">
                     <h2 className="title">About Me</h2>
                     <div className="cont">
                         <ul className="cont1">

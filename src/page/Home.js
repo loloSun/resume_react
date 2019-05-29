@@ -48,14 +48,12 @@ class Home extends Component{
                     },500+(index*200))
                 })
             }
-        }
-    // })
-        
+        }  
     }
 
     render() {
         const pageImg = {
-            background:'url(' + require("../static/img/cover_bg_3.jpg") + ')'
+            background:'url(' + require("../static/img/cover_bg_3.jpg") + ')',
         }
         return (
             <div className="page" style={pageImg}>
@@ -78,7 +76,7 @@ class Home extends Component{
                         <img src={require('../static/img/set.png')} alt="" />
                     </div>
                     <li>
-                        <Link to={{pathname:'/AboutMe'}} className="aboutme">About Me</Link>
+                        <Link to={{pathname:'/AboutMe'}} className="aboutme">AboutMe</Link>
                     </li>
                     <li>
                         <Link to={{pathname:'/Skill'}} className="skill">技 术</Link>

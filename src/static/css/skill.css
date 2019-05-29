@@ -1,0 +1,92 @@
+
+.circular{
+    width: 90%;
+    margin:auto;
+}
+.circular ul{
+    width: 100%;
+}
+.circular ul li{
+    width: 25%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.bigone{
+    width: 160px;
+    height: 160px;
+    background: #eee;
+    border-radius: 50%;
+    position: relative;
+    margin:auto;
+}
+.middle_1,
+.middle_2{
+    width:80px;
+    height: 160px;
+    background: none;
+    position: absolute;
+    overflow: hidden;
+    /* 两个矩形都设置了溢出隐藏，那么当我们去旋转矩形里面的圆形的时候，溢出部分就被隐藏掉了，这样我们就可以达到我们想要的效果 */
+}
+.middle_1{
+    left: 0;
+}
+.middle_2{
+    right: 0;
+}
+.inone{
+    width: 160px;
+    height: 160px;
+    /* 透明的边框 */
+    border:9px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    transform: rotate(45deg);
+}
+.middle_2>.inone{
+    border-top:9px solid #FF9000;
+    border-right:9px solid #FF9000;
+    right:0;
+}
+.middle_1>.inone{
+    border-bottom:9px solid #FF9000;
+    border-left:9px solid #FF9000;
+    left:0;
+}
+.smallone{
+    width: 153px;
+    height: 153px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 20;
+    text-align: center;
+}
+.smallone span{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width:992px){
+    .circular ul li{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    .circular ul{
+        margin-top:70px;
+    }
+    .circular ul li{
+        width: 100%;
+    }
+}
+
+
