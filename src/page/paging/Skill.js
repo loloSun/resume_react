@@ -16,7 +16,6 @@ class Skill extends Component{
             if($(window).scrollTop() > 100&&!flag){
                 flag = true
                 $(".progress_bar").each(function(index){
-                    console.log($(this).data("width"))
                     $(this).animate({
                         width:$(this).data("width")
                     },500)
