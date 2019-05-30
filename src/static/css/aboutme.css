@@ -4,26 +4,17 @@ ul,li,ol{
 .aboutme{
     box-sizing: border-box;
     position: relative;
-    /* background: rgba(255, 144, 0, 0.9); */
+    background: rgba(255, 144, 0, 0.9);
+    color:#fff;
 }
-.content{
-    width: 90%;
-    height: auto;
+.aboutme .content{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color:#fff;
-    animation: font 1s;
-    position: absolute;
-    top: 3rem;
-    left: 50%;
-    transform: translateX(-50%)
 }
-@keyframes font{
-    from{top:4.5rem;}
-    to{top:3rem;}
-}
-.title{
+
+.aboutme .title{
     line-height: 1.5;
     font-size: 2.5rem;
 }
@@ -43,11 +34,8 @@ ul,li,ol{
     .aboutme{
         overflow: hidden;
     }
-    .content{
+    .aboutme .content{
         height: 90%;
-    }
-    .title{
-        height: 18%;
     }
     .cont{
         height: 82%;
@@ -66,9 +54,6 @@ ul,li,ol{
     .aboutme{
         overflow: scroll;
     }
-    .title{
-        height: 6.25rem;
-    }
     .cont1{
         width: 100%;
     }
@@ -76,12 +61,6 @@ ul,li,ol{
         width: 100%;
         padding: 0 15px;
         box-sizing: border-box;
-    }
-}
-@media screen and (max-width:768px){
-    .title{
-        line-height: 2;
-        height: 5rem;
     }
 }
 @media screen and (min-width:480px){
@@ -100,11 +79,7 @@ ul,li,ol{
     .aboutme{
         font-size: .875rem;
     }
-    .title{
-        font-size: 1.6rem;
-        height: 3.75rem;
-    }
-    .content{
+    .about .content{
         width: 100%;
     }
     .cont1>li{

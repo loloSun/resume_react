@@ -112,6 +112,7 @@
     text-align: right;
     border-radius: 0 10% 10% 0;
     overflow: hidden;
+    color:#FF9000;
 }
 .set{
     position: absolute;

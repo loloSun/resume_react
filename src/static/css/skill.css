@@ -1,10 +1,17 @@
-
+.skill{
+    background: #fff;
+}
+.skill .title{
+    color:#FF9000;
+}
 .circular{
-    width: 90%;
-    margin:auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 .circular ul{
     width: 100%;
+    margin-top:50px;
 }
 .circular ul li{
     width: 25%;
@@ -75,17 +82,96 @@
     transform: translateY(-50%);
 }
 
+.progresses{
+    margin-top:50px;
+    width: 100%;
+    height: auto;
+}
+.progresses ul{
+    width: 100%;
+    /* background: pink; */
+    height: 100%;
+}
+.progresses ul li{
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+    height: 50px;
+    margin-bottom:20px;
+    /* background: yellow; */
+}
+.progresses ul li span{
+    font-size: 1rem;
+    color:#000;
+}
+.progress{
+    width: 100%;
+    height: 5px;
+    margin-top:10px;
+    background: #eee;
+    border-radius: 4px;
+}
+.progress_bar{
+    width: 0;
+    display: block;
+    height: 100%;
+	animation: progress-bar-stripes 2s linear infinite;
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-size: 40px 40px;
+	transition: width 0.6s ease;
+}
+.progresses ul li:nth-child(1) .progress_bar{
+    background-color: #2980b9 !important;
+}
+.progresses ul li:nth-child(2) .progress_bar{
+    background-color: #c0392b !important;
+}
+.progresses ul li:nth-child(3) .progress_bar{
+    background-color: #d35400 !important;
+}
+.progresses ul li:nth-child(4) .progress_bar{
+    background-color: #8e44ad !important;
+}
+.progresses ul li:nth-child(5) .progress_bar{
+    background-color: #27ae60 !important;
+}
+.progresses ul li:nth-child(6) .progress_bar{
+    background-color: #2F3C4F !important;
+}
+.progresses ul li:nth-child(7) .progress_bar{
+    background-color: yellowgreen !important;
+}
+@keyframes progress-bar-stripes{
+    0%{
+        background-position:40px 0;
+    }
+    100%{
+        background-position:0 0;
+    }
+}
+
 @media screen and (max-width:992px){
     .circular ul li{
         width: 50%;
     }
+    .progresses ul{
+        width: 90%;
+        margin:auto;
+    }
+    .progresses ul li{
+        width: 100%;
+    }
 }
 @media screen and (max-width:768px){
     .circular ul{
-        margin-top:70px;
+        margin-top:50px;
     }
     .circular ul li{
         width: 100%;
+    }
+    .progresses ul{
+        width: 100%;
+        margin:auto;
     }
 }
 
