@@ -13,7 +13,13 @@ class Skill extends Component{
     componentDidMount(){
         let flag = false
         $(window).on('scroll',()=>{
-            if($(window).scrollTop() > 100&&!flag){
+            var top
+            if($(window).width() < 992){
+                top = $('.progresses').offset().top / 2
+            } else {
+                top = 100
+            }
+            if($(window).scrollTop() > top && !flag){
                 flag = true
                 $(".progress_bar").each(function(index){
                     $(this).animate({
