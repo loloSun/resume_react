@@ -137,7 +137,7 @@ clip:rect(0,80px,160px,0);
     ```
     - 子组件2
     ```
-    class Children1 extends Component{
+    class Children2 extends Component{
         constructor(props){
             super(props);
         }
