@@ -175,3 +175,14 @@ clip:rect(0,80px,160px,0);
     }
     ```
 
+
+## react 懒加载
+- 下载 react-lazyload 包
+```
+npm install —-save react-lazyload
+```
+- 在组件中引用
+```
+import lazyLoad from 'react-lazyload'
+```
+- 使用 react-lazyload 是非常简单的，只需用 ```<LazyLoad ...> ... </ LazyLoad>``` 包装组件即可。
