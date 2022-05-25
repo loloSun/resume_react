@@ -62,7 +62,7 @@ class Home extends Component{
                 {/* 内容 */}
                 <div className="container">
                     <div className="logo_img">
-                        <img src={require("../static/img/logo_img.jpg")} alt="" />
+                        <img src={require("../static/img/logo_header.jpg")} alt="" />
                     </div>
                     <h1>
                         <span>孙晓琪</span>
@@ -85,7 +85,7 @@ class Home extends Component{
                         <Link to={{pathname:'/Project'}} className="project">项目经验</Link>
                     </li>
                     <li>
-                        <Link to={{pathname:'/Article'}} className="article">文章 笔记</Link>
+                        <a href='//segmentfault.com/u/axigua' className="article" target="_blank">文章 笔记</a>
                     </li>
                 </ul>
             </div>

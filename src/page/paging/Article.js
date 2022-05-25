@@ -10,6 +10,7 @@ class Article extends Component{
         return(
             <div className='page'>
                 <Nav />
+                <iframe src="//segmentfault.com/u/axigua" frameborder="0"></iframe>
             </div>
         )
     }

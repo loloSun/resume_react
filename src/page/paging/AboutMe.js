@@ -29,11 +29,11 @@ class AboutMe extends Component{
                             </li>
                             <li>
                                 <span className="first-block">Phone:</span>
-                                <span className="second-block">12345678910</span>
+                                <span className="second-block">17319051427</span>
                             </li>
                             <li>
                                 <span className="first-block">Email:</span>
-                                <span className="second-block">17319051427@160.com</span>
+                                <span className="second-block">17319051427@163.com</span>
                             </li>
                             <li>
                                 <span className="first-block">github:</span>
@@ -41,7 +41,7 @@ class AboutMe extends Component{
                             </li>
                             <li>
                                 <span className="first-block">Address:</span>
-                                <span className="second-block">北京 昌平</span>
+                                <span className="second-block">北京 顺义</span>
                             </li>
                             <ol>
                                 <li>

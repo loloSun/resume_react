@@ -11,7 +11,7 @@ class Nav extends Component {
                     <NavLink className="nav-link" to='/AboutMe' exact>AboutMe</NavLink>
                     <NavLink className="nav-link" to='/Skill'>技 术</NavLink>
                     <NavLink className="nav-link" to='/Project'>项目经验</NavLink>
-                    <NavLink className="nav-link" to='/Article'>文章 笔记</NavLink>
+                    <a className="nav-link" href='//segmentfault.com/u/axigua' target="_blank">文章 笔记</a>
                 </nav> 
             </div>
         );
